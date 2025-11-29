@@ -7,13 +7,3 @@ terraform {
   }
 }
 
-
-
-resource "aws_instance" "Web" {
-  ami           = "ami-0305d3d91b9f22e84"
-  instance_type = "t2.nano"
-
-  tags = {
-    Name = "Task"
-  }
-}
