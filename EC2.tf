@@ -17,12 +17,3 @@ resource "aws_instance" "Web" {
     Name = "Task"
   }
 }
-
-resource "aws_s3_bucket" "task-s3" {
-  bucket = "prod-atul2599-bucket"
-
-  tags = {
-    Name        = "My bucket"
-    Environment = "Atul"
-  }
-}
